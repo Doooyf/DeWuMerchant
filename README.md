@@ -20,7 +20,7 @@ passporttoken: {mchToken}
 syscode:DU_USER
 ```
 
-##### sign加密方式：
+#### sign加密方式：
 
 请求参数按ASCII码排序，拼接 `字符串 + "048a9c4943398714b356a696503d2d36"` <br/>如下
 ```

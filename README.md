@@ -32,11 +32,15 @@ pageSize: 20
 ```
 
 ### 商家信息
+
 请求方式：get
+
 https://stark.dewu.com/api/v1/h5/biz/home/merchantInfo?sign=fe26befc49444d362c8f17463630bdba
 ---
 ### 出价列表
+
 请求方式：post
+
 https://stark.dewu.com/api/v1/h5/biz/bidding/biddingList
 请求参数：
 ```
@@ -49,8 +53,9 @@ sign: "897ccf162c15dc2900cc7a513a2b80ce"
 ```
 ---
 ### 待发货订单列表
-TODO
+
 请求方式：post
+
 https://stark.dewu.com/api/v1/h5/biz/orders/list
 请求参数
 ```
@@ -66,8 +71,9 @@ subTypeListString: "0,13"
 ```
 ---
 ### 商品出价查询
-TODO
+
 请求方式：post
+
 https://stark.dewu.com/api/v1/h5/biz/search/newProductSearch
 请求参数
 ```
@@ -80,8 +86,9 @@ sign: "94daf216b5b511d54c43ef980668c563"
 ```
 ---
 ### 商品出价规格查询
-TODO
+
 请求方式：GET
+
 https://stark.dewu.com/api/v1/h5/biz/newBidding/queryPropsBySpuId
 请求参数
 ```
@@ -89,7 +96,9 @@ spuId: 1204463
 sign: 0638e9f893a1db3a155c25ec62b63713
 ```
 ### 商品详情
+
 请求方式 GET
+
 https://stark.dewu.com/api/v1/h5/biz/bidding/detail
 请求参数：
 ```
@@ -99,8 +108,9 @@ sign: b4194769ec14f37dc3f63a72d9a802c8
 ```
 ---
 ### 商品下架
-TODO
+
 请求方式：post
+
 https://stark.dewu.com/api/v1/h5/biz/newBidding/addOrUpdateSingleBidding
 请求参数：
 ```
@@ -115,7 +125,9 @@ type: 1
 ```
 ---
 ### 商品上架或修改
+
 请求方式：post
+
 https://stark.dewu.com/api/v1/h5/biz/newBidding/addOrUpdateSingleBidding
 请求参数：
 ```

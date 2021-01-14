@@ -34,34 +34,6 @@ pageSize: 20
 ### 商家信息
 请求方式：get
 https://stark.dewu.com/api/v1/h5/biz/home/merchantInfo?sign=fe26befc49444d362c8f17463630bdba
-返回参数信息：
-```json
-{
-    "data": {
-        "merchantName": "王小明",
-        "merchantTypeName": "普通商家-vip",
-        "supportSevenDaysNoReasonReturn": false,
-        "supportInvoicing": false,
-        "returnDepositRed": false,
-        "returnDepositExists": false,
-        "enterDepositRed": false,
-        "enterDeposit": 1000000, // 保证金
-        "poundageSale": 10000,
-        "performanceSale": 10000,
-        "technicalSale": 10000,
-        "notEnterprise": true,
-        "remainPrepaidFee": 0,
-        "remainStorageFee": 0,
-        "noticeSignStorageProtocol": false,
-        "open": true
-    },
-    "code": 200,
-    "status": 200,
-    "msg": "ok",
-    "error": false
-}
-```
-
 ---
 ### 出价列表
 请求方式：post

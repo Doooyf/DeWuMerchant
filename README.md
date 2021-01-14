@@ -8,17 +8,21 @@ APP的破解接口sign详情可见[luo1994/du-app-sign](https://github.com/luo19
 本破解方式也适用于APP端和小程序端的接口
 
 > 登录可使用模拟点击登录进入，获取Token
+
 ## 文档
 
- > 必带请求头
+#### 请求头
+```
 channel:pc
 clientid:stark
 content-type:application/json;charset=UTF-8
 passporttoken: {mchToken}
 syscode:DU_USER
+```
 
-> sign加密方式：<br/> 请求参数按ASCII码排序，拼接 字符串 + "048a9c4943398714b356a696503d2d36" <br/>如下
+##### sign加密方式：
 
+请求参数按ASCII码排序，拼接 `字符串 + "048a9c4943398714b356a696503d2d36"` <br/>如下
 ```
 pageSize: 20
 pageNo: 1
@@ -36,12 +40,14 @@ pageSize: 20
 请求方式：get
 
 https://stark.dewu.com/api/v1/h5/biz/home/merchantInfo?sign=fe26befc49444d362c8f17463630bdba
+
 ---
 ### 出价列表
 
 请求方式：post
 
 https://stark.dewu.com/api/v1/h5/biz/bidding/biddingList
+
 请求参数：
 ```
 biddingModel: 1
@@ -57,6 +63,7 @@ sign: "897ccf162c15dc2900cc7a513a2b80ce"
 请求方式：post
 
 https://stark.dewu.com/api/v1/h5/biz/orders/list
+
 请求参数
 ```
 becomingDeliverTimeOut: false
@@ -75,6 +82,7 @@ subTypeListString: "0,13"
 请求方式：post
 
 https://stark.dewu.com/api/v1/h5/biz/search/newProductSearch
+
 请求参数
 ```
 articleNumberStr: "关键词" // 型号搜索内容
@@ -90,6 +98,7 @@ sign: "94daf216b5b511d54c43ef980668c563"
 请求方式：GET
 
 https://stark.dewu.com/api/v1/h5/biz/newBidding/queryPropsBySpuId
+
 请求参数
 ```
 spuId: 1204463
@@ -100,6 +109,7 @@ sign: 0638e9f893a1db3a155c25ec62b63713
 请求方式 GET
 
 https://stark.dewu.com/api/v1/h5/biz/bidding/detail
+
 请求参数：
 ```
 spuId: 1204463
@@ -112,6 +122,7 @@ sign: b4194769ec14f37dc3f63a72d9a802c8
 请求方式：post
 
 https://stark.dewu.com/api/v1/h5/biz/newBidding/addOrUpdateSingleBidding
+
 请求参数：
 ```
 oldQuantity: 1
@@ -129,6 +140,7 @@ type: 1
 请求方式：post
 
 https://stark.dewu.com/api/v1/h5/biz/newBidding/addOrUpdateSingleBidding
+
 请求参数：
 ```
 // 新增
